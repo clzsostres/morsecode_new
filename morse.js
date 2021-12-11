@@ -26,6 +26,7 @@ const morse = {
     X: "-..-",
     Y: "-.--",
     Z: "--..",
+
     " ": "/",
 
     0: "-----",
@@ -57,8 +58,8 @@ function text2Morse() {
     document.getElementById("output").value = code;
 }
 
-function getKey(obj, val) {
-    return Object.keys(obj).find((key) => obj[key] === val);
+function getKey(object, value) {
+    return Object.keys(object).find((key) => object[key] === value);
 }
 
 function morse2Text() {
