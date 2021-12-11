@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="stylemorse.css" />
+        <script src="morse.js"></script>
+        <title>Morse Code Translator</title>
+    </head>
+    <body>
+        <h1>Morse Code Translator</h1>
+        <div class="container">
+            <div>
+                <h2>Input</h2>
+                <textarea
+                    id="input"
+                    class="textBox"
+                    placeholder="write a message"
+                ></textarea>
+            </div>
+
+            <button class="button" onclick="text2Morse()">
+                Convert Text to Morse
+            </button>
+            <button class="button" onclick="morse2Text()">
+                Convert More to Text
+            </button>
+            <button class="button" onclick="clearText()">Clear</button>
+            <div>
+                <h2>Output</h2>
+                <textarea id="output" class="textBox"></textarea>
+            </div>
+        </div>
+    </body>
+</html>
